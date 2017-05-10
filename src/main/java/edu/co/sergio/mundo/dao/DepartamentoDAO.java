@@ -203,7 +203,6 @@ public class DepartamentoDAO implements IBaseDatos<Departamento> {
             d = new Departamento();
             while (rs.next()) {
                 d.setNom_departamento(rs.getString("nom_Depto"));
-                d.setId_departamento(rs.getInt("id_depto"));
                 d.setTotal(rs.getInt("Num"));
             }
             st.close();
